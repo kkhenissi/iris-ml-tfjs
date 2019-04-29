@@ -1,0 +1,26 @@
+<ul class="nav nav-pills">
+  <li>
+    <button class="btn btn-success" (click)="onMult()">X * Y</button>
+  </li>
+
+</ul>
+<div class="container">
+ <div class="row">
+   <div *ngFor="let t of tensors | keyvalue">
+   <div class="col-md-3">
+   <div class="panel panel-primary">
+     <div class="panel-heading">Tensor :{{t.key}}</div>
+       <div class="panel-body">
+          <table class="table">
+              <tr *ngFor="let line of t.value.arraySync()">
+                  <td *ngFor="let v of line">{{v}}</td>
+              </tr>
+          </table>
+       </div>
+      </div>
+     </div>
+    </div>
+
+
+ </div>
+</div>
