@@ -1,6 +1,6 @@
 
 <div class="container">
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills" style="padding-top: 5px">
         <li>
           <button class="btn btn-success" (click)="onMult()">X * Y</button>
         </li>
@@ -8,12 +8,13 @@
             <button class="btn btn-success" (click)="onTranspose()">Transpose X </button>
         </li>
         <li>
-            <button class="btn btn-success" (click)="onSignoide()">Signoide </button>
+            <button class="btn btn-success" (click)="onSigmoide()">Sigmoide </button>
         </li>
         <li>
             <button class="btn btn-success" (click)="onRelu()">Relu X </button>
         </li>
      </ul>
+     <p></p>
  <div class="row">
    <div *ngFor="let t of tensors | keyvalue">
    <div class="col-md-3">
@@ -39,8 +40,8 @@
     <li>
       <button class="btn btn-success" (click)="onCreateModel()">Create Model</button>
     </li>
-
   </ul>
+  <p></p>
   <div class="panel panel-primary">
     <div class="panel-heading">Model</div>
     <div class="panel-body">

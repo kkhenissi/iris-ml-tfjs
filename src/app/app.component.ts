@@ -29,7 +29,7 @@ export class AppComponent implements OnInit  {
   onTranspose() {
      this.tensors['Z']=this.tensors['X'].transpose();
   }
-  onSignoide() {
+  onSigmoide() {
     this.tensors['Z']=tf.sigmoid(this.tensors['X']);
   }
   onRelu() {
